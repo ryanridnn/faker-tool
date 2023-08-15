@@ -1,9 +1,9 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import { faker } from "@faker-js/faker";
+import { faker as fakergen } from "@faker-js/faker";
 
-console.log(faker);
+console.log(fakergen);
 // Object.keys(faker).forEach((item) => {
 //   const category = faker[item];
 
@@ -22,6 +22,7 @@ function App() {
 
   const onRun = () => {
     try {
+      let faker = fakergen;
       const repeat = (count, cb) => {
         const res = [];
 
